@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>登录到 foxaxu</title>
+        <meta name='description' content='FoxaXu 弧旴 WEBSITE IIS Server'>
+        <meta http-equiv='content-language' content='zh-cn'>
+        <link rel="shortcut icon" href="https://foxaxu.com/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+    </head>
+
+    <script type="text/javascript">
+   if(window.screen.availWidth<768){
+    //移动端
+    
+    }
+    else {
+    //PC端
+    window.location.replace("https://foxaxu.com/login");
+    }
+    </script>
+
+    <style>
+        body {
+            background-image: url('https://foxaxu.com/background.png');
+        }
+    </style>
+
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/TOPBAR.html" width="100%" height="90" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div>
+    <style>
+        body {
+        background-color: black;
+        text-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
+        }
+    </style>
+    <font color="white" size="4">
+    <br>
+    <br>
+    <div style="text-align: center;"><body><h1>登录你的账号</h1></body></div>
+
+    <script>
+        if (localStorage.getItem("FoxaXuLoginVerifyServiceUserName") != null) {
+            window.location.replace("https://foxaxu.com/user");
+        }
+    </script>
+
+    <br>
+    <div style="text-align:center;"><body>
+                <form action="#" id="Login">
+                    <div class="用户标识符">
+                        <span></span><input id="UserTypeID" type="text">
+                    </div>
+                    <div class="登录密码">
+                        <span></span><input id="UserTypePassword" type="password">
+                    </div>
+                    <div class="Login_Button">
+                        <br>
+                        <input type="button" class="button" value="登录" onclick="login_down()">
+                        &emsp;
+                        <input type="button" class="button" value="返回" onclick="back_down()">
+                    </div>
+                </form>
+    </body></div>
+
+    <div style="text-align: center;">
+        <p><b>账号只有加入我们的用户才会用有</b></p>
+        <p>如果你想加入我们可以在下方尝试联系我们</p>
+        <p>内部泄露的账号可能会被游客用户用来登录，不过我们将在发现后及时处理，我们暂时不开放账号模块</p>
+        <p>如果你有一个内部账号，但无法登录，请发邮箱或者私信联系我们</p>
+        <p>如果你想联系我方，请点击底部的 联系我们</p>
+    </div>
+
+    <script>
+        function back_down() {
+            window.location.replace("https://www.foxaxu.com");
+        }
+
+        function login_down() {
+
+            var utID = document.getElementById("UserTypeID").value;
+            var utPASSWD = document.getElementById("UserTypePassword").value;
+
+            var newlink = "https://foxaxu.com/userprofile/" + utID + "/" +utPASSWD + ".html"
+
+            window.location.replace(newlink);
+        }
+    </script>
+
+    <br>
+    <p> Copyright FoxaXu 2023. All Rights Reserved.</p>
+    </div>
+
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/MYINFO.html" width="100%" height="150" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div></font>
+</html>

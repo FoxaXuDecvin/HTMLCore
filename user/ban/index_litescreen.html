@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>个人用户面板 foxaxu.com</title>
+        <meta name='description' content='FoxaXu 弧旴 WEBSITE IIS Server'>
+        <meta http-equiv='content-language' content='zh-cn'>
+        <link rel="shortcut icon" href="https://foxaxu.com/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+    </head>
+
+    <script type="text/javascript">
+    if (localStorage.getItem("FoxaXuUserDebugAuth") != null) {
+        window.location.replace("https://foxaxu.com");
+    }
+
+   if(window.screen.availWidth<768){
+    //移动端
+    
+    }
+    else {
+    //PC端
+    window.location.replace("https://foxaxu.com/user/ban");
+    }
+
+    </script>
+
+    <style>
+        body {
+            background-image: url('https://foxaxu.com/background.png');
+        }
+    </style>
+
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/TOPBAR.html" width="100%" height="90" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div>
+    <style>
+        body {
+        background-color: black;
+        text-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
+        }
+    </style>
+    <font color="white" size="4">
+    <div style="text-align: center;"><body><h1>个人用户面板</h1></body>
+    <script>
+        if (localStorage.getItem("FoxaXuLoginVerifyServiceUserName") != null) {
+        var newdata = window.localStorage.getItem("FoxaXuLoginVerifyServiceUserName");
+        document.write(newdata);
+    }
+    else
+    {
+        window.location.replace("https://foxaxu.com");
+    }
+    </script>
+
+    <p><b>你的账号已经被停用</b></p>
+    <p>我们已经暂停了你的账号授权</p>
+    <p>你可能违反了我们的条约或者因为特殊原因被封禁</p>
+    <p>请尝试联系我们寻求帮助</p>
+    <p>如果你是因为违反了我们的条约而被封禁，我们将不给予解封</p>
+    <p>如果你的账号是因为长期未使用而被标记，请在下方点击联系我们进行操作</p>
+    <p>如果这是由于我们的问题所导致的，抱歉打扰你了</p>
+    <br>
+    <p>默认情况下不支持自己创建用户，仅加入测试计划的用户拥有此权限</p>
+    <p>如果你有问题可以联系我们</p>
+    <p></p>
+    <br>
+    <a href="https://foxaxu.com/login/logoff.html">注销当前用户</a>
+    <p> Copyright FoxaXu 2023. All Rights Reserved.</p>
+
+    </div>
+
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/MYINFO.html" width="100%" height="150" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div></font>
+</html>

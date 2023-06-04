@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>文档模块</title>
+        <meta name='description' content='FoxaXu 弧旴 WEBSITE IIS Server'>
+        <meta http-equiv='content-language' content='zh-cn'>
+        <link rel="shortcut icon" href="https://foxaxu.com/favicon.ico">
+    </head>
+
+    <script type="text/javascript">
+   if(window.screen.availWidth<768){
+    //移动端
+    window.location.replace("https://foxaxu.com/doc/index_litescreen.html");
+    }
+    else {
+    //PC端
+    }
+    </script>
+
+    <style>
+        body {
+        background-color: black;
+        text-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
+        }
+        body {
+            background-image: url('https://foxaxu.com/background.png');
+        }
+    </style>
+
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/TOPBAR.html" width="100%" height="90" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div>
+
+    <body>
+        <font color="white" size="4">
+    <h1><body>FoxaXu</body></h1>
+    <hr/>
+    <form action="#" id="Login">
+        <div class="自定义">
+            <p><b>直接跳转 格式 20230603</b></p>
+            <span></span><input id="UserTypeLink" type="text"> <input type="button" class="button" value="跳转" onclick="openweb_click()"> 
+        </div>
+    <hr/>
+    <br>
+    <p>文档链接模块</p>
+    <p>你可以在上面搜索到各种之前发布过的模块</p>
+    <p>如果出现404则表示文件不存在</p>
+    <p>可用格式 : 20230603 点击跳转跳转</p>
+    <p>文档标识符可以在主页左下方找到</p>
+    <br>
+    <p> FoxaXu 2023 06 03</p>
+    </div>
+
+    <script>
+        function openweb_click() {
+
+            var utLink = document.getElementById("UserTypeLink").value;
+
+            var newlink = "https://foxaxu.com/doc/history/" + utLink;
+
+            window.location.replace(newlink);
+        }
+    </script>
+
+    </font>
+    </body>
+    
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/MYINFO.html" width="100%" height="150" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div>
+</html>

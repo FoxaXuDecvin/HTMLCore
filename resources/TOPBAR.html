@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TopBar</title>
+    </head>
+    <style>
+        body {
+        background-color: black;
+        text-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
+        }
+        body {
+            background-color: transparent;
+        }
+    </style>
+    <font color="white" size="3">
+    <div style="text-align: left;">
+    <a href="https://cn.bing.com/search?pglt=161&q=foxaxu" target="_blank"><img src="https://foxaxu.com/favicon.png" width="50"></a>
+    <a href="https://foxaxu.com" target="_blank">我的主页</a> 
+    <a href="https://foxaxu.com/doc" target="_blank">历史文档</a> 
+    <a href="https://space.bilibili.com/1426318422" target="_blank">Bilibili</a> 
+    <a href="https://github.com/FoxaXuDecvin" target="_blank">Github</a> 
+    <a href="https://api.foxaxu.com" target="_blank">API</a> 
+    <a href="https://developer.foxaxu.com" target="_blank">Developer</a>
+    &emsp; &emsp;
+        <a href="https://foxaxu.com/login" target="_blank">
+        <script>
+            if (localStorage.getItem("FoxaXuLoginVerifyServiceUserName") != null) {
+                var userbaninfo = window.localStorage.getItem("FoxaXuUserBan");
+
+            if (userbaninfo == "open") {
+                var newdata = window.localStorage.getItem("FoxaXuLoginVerifyServiceUserName");
+                var outdata = "Your Account is Banned ." + newdata;
+
+                document.write(outdata)
+            }
+            else {
+                var newdata = window.localStorage.getItem("FoxaXuLoginVerifyServiceUserName");
+                var outdata = "Welcome ." + newdata;
+
+                document.write(outdata)
+            }
+                
+            }
+            else {
+                document.write("登录");
+            }
+        </script></a>
+
+    &emsp;
+    <a style="text-align: right;" href="https://foxaxu.com/login/logoff.html" target="_blank">
+        <script>
+            if (localStorage.getItem("FoxaXuLoginVerifyServiceUserName") != null) {
+                document.write("注销");
+            }
+        </script></a>
+    </div></p>
+    <hr/>
+</font>
+</html>

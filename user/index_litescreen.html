@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>个人用户面板 foxaxu.com</title>
+        <meta name='description' content='FoxaXu 弧旴 WEBSITE IIS Server'>
+        <meta http-equiv='content-language' content='zh-cn'>
+        <link rel="shortcut icon" href="https://foxaxu.com/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    </head>
+
+    <script type="text/javascript">
+   if(window.screen.availWidth<768){
+    //移动端
+    
+    }
+    else {
+    //PC端
+    window.location.replace("https://foxaxu.com/user");
+    }
+    </script>
+
+    <style>
+        body {
+            background-image: url('https://foxaxu.com/background.png');
+        }
+    </style>
+
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/TOPBAR.html" width="100%" height="90" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div>
+    <style>
+        body {
+        background-color: black;
+        text-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
+        }
+    </style>
+    <font color="white" size="4">
+    <div style="text-align: center;"><body><h1>个人用户面板</h1></body></div>
+
+    <div style="text-align: center;">
+
+    <script>
+        if (localStorage.getItem("FoxaXuLoginVerifyServiceUserName") != null){}
+        else {
+            window.location.replace("https://foxaxu.com/login/logoff.html");
+        }
+        var newdata = window.localStorage.getItem("FoxaXuLoginVerifyServiceUserName");
+        var currentuser = "当前用户 :  " + newdata;
+
+        document.write(currentuser);
+    </script>
+
+    <p><a href="https://foxaxu.com/user/ban"><script>
+        var userbaninfo = window.localStorage.getItem("FoxaXuUserBan");
+        if (userbaninfo == "open") {
+            document.write("当前账号已被封禁，详细原因请点击此处");
+        }
+    </script></a></p>
+
+    <br>
+
+    <script>
+        var newdataB = window.localStorage.getItem("FoxaXuUserDebugAuth");
+        var userauthdata = "当前用户的权限 ： " + newdataB
+
+        document.write(userauthdata);
+    </script>
+
+    <br>
+
+    <script>
+        var newdataC = window.localStorage.getItem("FoxaXuUserLevel");
+        var userlevelinfo = "用户等级 ： " + newdataC
+
+        document.write(userlevelinfo);
+    </script>
+
+    <p>默认情况下不支持自己创建用户，仅加入测试计划的用户拥有此权限</p>
+    <p>如果你有问题可以联系我们</p>
+    <p></p>
+    <br>
+    <p> Copyright FoxaXu 2023. All Rights Reserved.</p>
+
+    </div>
+
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/MYINFO.html" width="100%" height="150" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div></font>
+</html>

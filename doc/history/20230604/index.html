@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to FoxaXu</title>
+        <meta name='description' content='FoxaXu 弧旴 WEBSITE IIS Server'>
+        <meta http-equiv='content-language' content='zh-cn'>
+        <link rel="shortcut icon" href="https://foxaxu.com/favicon.ico">
+    </head>
+
+    <script type="text/javascript">
+   if(window.screen.availWidth<768){
+    //移动端
+    window.location.replace("https://foxaxu.com/doc/history/20230604/index_litescreen.html");
+    }
+    else {
+    //PC端
+    }
+    </script>
+
+    <style>
+        body {
+        background-color: black;
+        text-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
+        }
+        body {
+            background-image: url('https://foxaxu.com/background.png');
+        }
+    </style>
+
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/TOPBAR.html" width="100%" height="90" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div>
+
+    <body>
+        <font color="white" size="4">
+    <h1><body>FoxaXu</body></h1>
+    <hr/>
+    <p><b>被酒莫惊春睡重，赌书消得泼茶香。当时只道是寻常  --浣溪沙</b></p>
+
+    <script>
+        if (localStorage.getItem("FoxaXuLoginVerifyServiceUserName") != null) {
+                var newdata = window.localStorage.getItem("FoxaXuLoginVerifyServiceUserName");
+                var outdata = "欢迎 " + newdata;
+
+                document.write(outdata)
+            }
+            else {
+                document.write("欢迎");
+            }
+
+        var userbaninfo = window.localStorage.getItem("FoxaXuUserBan");
+        if (userbaninfo == "open") {
+            window.location.replace("https://foxaxu.com/login/logoffban.html");
+        }
+    </script>
+
+    <hr/>
+    <br>
+    <p>欢迎来到我的网站</p>
+    <p>最近可能要有新内容了</p>
+    <p>所有我打算优化下网页</p>
+    <p>如果你有其他的问题可以联系我们</p>
+    <p>我们争取会一直维护下去</p>
+    <p>视频可能鸽了,因为最近时间越来越少了</p>
+    <p>其他的其实基本没变化</p>
+    <br>
+    <p> FoxaXu 2023 06 04/p>
+    </div>
+    </font>
+    </body>
+    
+    <div class="main-container" id="main" style="width:99%">
+        <iframe src="https://foxaxu.com/resources/MYINFO.html" width="100%" height="150" frameborder="0">
+            Cannot Load TopBar. Please Check your Internet
+        </iframe>
+    </div>
+</html>
